@@ -7,7 +7,6 @@
     "icon": "./assets/images/icon.png",
     "scheme": "oldstylechat",
     "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
     "ios": {
       "supportsTablet": true
     },
@@ -19,14 +18,14 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.stark_nagendra_s.oldstylechat"
     },
     "web": {
       "output": "static",
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
-      "expo-router",
       [
         "expo-splash-screen",
         {
@@ -43,6 +42,12 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ab1b13f3-5357-4142-baa9-856930006f6b"
+      }
+    },
+    "owner": "stark_nagendra_s"
   }
 }
