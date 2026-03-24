@@ -75,13 +75,13 @@ export default function LoginScreen() {
       />
       <View style={styles.content}>
         <Text style={styles.title}>iChat Login</Text>
-        <Text style={styles.subtitle}>Enter your phone number to continue</Text>
+        <Text style={styles.subtitle}>The Next Gen Chat App in Old Style</Text>
 
         {!verificationId ? (
           <>
             <TextInput
               style={styles.input}
-              placeholder="+1 123 456 7890"
+              placeholder="+91 123 456 7890"
               placeholderTextColor="#999"
               autoCompleteType="tel"
               keyboardType="phone-pad"
@@ -169,11 +169,13 @@ const styles = StyleSheet.create({
     fontSize: 18,
     marginBottom: 20,
     backgroundColor: "#fff",
+    borderRadius: 10,
   },
   button: {
     backgroundColor: "#000",
     padding: 18,
     alignItems: "center",
+    borderRadius: 10,
   },
   buttonText: {
     color: "#fff",

@@ -6,6 +6,7 @@ import { db } from '../services/firebase';
 import { doc, getDoc, onSnapshot } from 'firebase/firestore';
 
 // Screens (I'll create these next)
+import SplashScreen from '../screens/SplashScreen';
 import LoginScreen from '../screens/LoginScreen';
 import ProfileSetupScreen from '../screens/ProfileSetupScreen';
 import ChatListScreen from '../screens/ChatListScreen';
@@ -38,7 +39,7 @@ export default function AppNavigator() {
   }, [user]);
 
   if (loading || (user && profileLoading)) {
-    return null; // Or a loading screen
+    return <SplashScreen />;
   }
 
   return (
